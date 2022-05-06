@@ -20,9 +20,9 @@ figure {
 
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr [box-start] 1fr 1fr [box-end] 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: masonry;
 }
-.positioned{
-  grid-column: box-start / box-end;
+.landscape {
+  grid-column-end: span 2;
 }
