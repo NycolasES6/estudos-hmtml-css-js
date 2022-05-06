@@ -10,12 +10,19 @@ img {
 figure {
   margin: 0;
   display: flex;
-  margin-bottom: 10px;
   break-inside: avoid;
 }
 
 
 .container {
-  column-count: 5;
-  column-gap: 10px;
+  /* column-count: 5; */
+  /* column-gap: 10px; */
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr [box-start] 1fr 1fr [box-end] 1fr;
+    grid-template-rows: masonry;
+}
+.positioned{
+  grid-column: box-start / box-end;
 }
